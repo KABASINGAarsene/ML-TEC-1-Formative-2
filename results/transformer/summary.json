@@ -1,0 +1,28 @@
+{
+  "model": "Transformer (bertweet-base, fine-tuned)",
+  "config": {
+    "backbone": "vinai/bertweet-base",
+    "lr": 2e-05,
+    "class_weighted": false,
+    "agreement_weighted": false,
+    "max_len": 48
+  },
+  "test_metrics_representative_run": {
+    "accuracy": 0.7973,
+    "macro_precision": 0.7658,
+    "macro_recall": 0.7431,
+    "macro_f1": 0.7512,
+    "neg_recall": 0.5769,
+    "neg_f1": 0.6228,
+    "neu_f1": 0.8299,
+    "pos_f1": 0.8009,
+    "mcc": 0.6559,
+    "roc_auc_macro": 0.9089,
+    "rmse_score": 0.514
+  },
+  "test_macro_f1_over_seeds": {
+    "mean": 0.7353,
+    "std": 0.014,
+    "n_seeds": 3
+  }
+}
